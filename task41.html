@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do  Web App</title>
+    <link rel="stylesheet" href="style41.css"></link>
+</head>
+<body>
+    <header class="header">
+        <h1>📝My To-Do App</h1>
+        <p>Plan your day.Stay productive.</p>
+    </header>
+    <main class="container">
+        <section class="task-input-section">
+            <label>Task Title</label>
+            <input type="text" id="taskInput" placeholder="Enter your task">
+           
+            <label>Date & Time</label>
+            <input type="datetime-local" id="taskTime">
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+        <section class="filter-section">
+            <h3>Filter Task</h3>
+            <button onclick="showAll()">All</button>
+            <button onclick="showCompleted()">Completed</button>
+            <button onclick="showPending()">Pending</button>
+        </section>
+        <section class="task-list-section">
+            <h3>Your Tasks</h3>
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Created for SkillCraft Technology Internship</p>
+        </footer>
+        <script src="script4.js"></script>
+</body>
+</html>
+
+        
